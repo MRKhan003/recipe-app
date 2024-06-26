@@ -8,11 +8,15 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "My App",
+        title: Text(
+          "Recipe Book",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 28,
+          ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.green,
+        backgroundColor: const Color.fromARGB(255, 76, 155, 175),
       ),
       body: ListView.builder(
         itemCount: RecipeApp.recipeList.length,
